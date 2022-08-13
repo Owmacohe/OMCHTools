@@ -2,10 +2,18 @@
 
 namespace OMCHTools
 {
+    /// <summary>
+    /// For reading array data from various types of TextAssets
+    /// </summary>
     public class File
     {
         #region TXTToArray
         
+        /// <summary>
+        /// Converts a given TextAsset into a string array of lines
+        /// </summary>
+        /// <param name="asset">The .txt file to be split</param>
+        /// <returns>A string array of the lines in the file</returns>
         public static string[] TXTToStringArray(TextAsset asset)
         {
             string[] split = asset.text.Split('\n');
@@ -18,11 +26,21 @@ namespace OMCHTools
             return split;
         }
         
+        /// <summary>
+        /// Converts a TextAsset in the Resources folder into a string array of lines
+        /// </summary>
+        /// <param name="fileName">The local name of the .txt file to be split in Resources</param>
+        /// <returns>A string array of the lines in the file</returns>
         public static string[] TXTToStringArray(string fileName)
         {
             return TXTToStringArray(Resources.Load<TextAsset>(fileName));
         }
         
+        /// <summary>
+        /// Converts a given TextAsset into an int array of lines
+        /// </summary>
+        /// <param name="asset">The .txt file to be split</param>
+        /// <returns>An int array of the lines in the file</returns>
         public static int[] TXTToIntArray(TextAsset asset)
         {
             string[] split = asset.text.Split('\n');
@@ -36,11 +54,21 @@ namespace OMCHTools
             return temp;
         }
         
+        /// <summary>
+        /// Converts a TextAsset in the Resources folder into an int array of lines
+        /// </summary>
+        /// <param name="fileName">The local name of the .txt file to be split in Resources</param>
+        /// <returns>An int array of the lines in the file</returns>
         public static int[] TXTToIntArray(string fileName)
         {
             return TXTToIntArray(Resources.Load<TextAsset>(fileName));
         }
         
+        /// <summary>
+        /// Converts a given TextAsset into a float array of lines
+        /// </summary>
+        /// <param name="asset">The .txt file to be split</param>
+        /// <returns>A float array of the lines in the file</returns>
         public static float[] TXTToFloatArray(TextAsset asset)
         {
             string[] split = asset.text.Split('\n');
@@ -54,19 +82,30 @@ namespace OMCHTools
             return temp;
         }
         
+        /// <summary>
+        /// Converts a TextAsset in the Resources folder into a float array of lines
+        /// </summary>
+        /// <param name="fileName">The local name of the .txt file to be split in Resources</param>
+        /// <returns>A float array of the lines in the file</returns>
         public static float[] TXTToFloatArray(string fileName)
         {
             return TXTToFloatArray(Resources.Load<TextAsset>(fileName));
         }
         
-        public static Vector3[] TXTToVector3Array(TextAsset asset)
+        /// <summary>
+        /// Converts a given TextAsset into a Vector3 array of lines
+        /// </summary>
+        /// <param name="asset">The .txt file to be split</param>
+        /// <param name="delim">The deliminator between x, y, and z values for each line (',' by default)</param>
+        /// <returns>A Vector3 array of the lines in the file</returns>
+        public static Vector3[] TXTToVector3Array(TextAsset asset, char delim = ',')
         {
             string[] split = asset.text.Split('\n');
             Vector3[] temp = new Vector3[split.Length];
 
             for (int i = 0; i < split.Length; i++)
             {
-                string[] splitSplit = split[i].Trim().Split(',');
+                string[] splitSplit = split[i].Trim().Split(delim);
                 
                 temp[i] = new Vector3(
                     float.Parse(splitSplit[0]),
@@ -78,27 +117,38 @@ namespace OMCHTools
             return temp;
         }
         
-        public static Vector3[] TXTToVector3Array(string fileName)
+        /// <summary>
+        /// Converts a TextAsset in the Resources folder into a Vector3 array of lines
+        /// </summary>
+        /// <param name="fileName">The local name of the .txt file to be split in Resources</param>
+        /// <param name="delim">The deliminator between x, y, and z values for each line (',' by default)</param>
+        /// <returns>A Vector3 array of the lines in the file</returns>
+        public static Vector3[] TXTToVector3Array(string fileName, char delim)
         {
-            return TXTToVector3Array(Resources.Load<TextAsset>(fileName));
+            return TXTToVector3Array(Resources.Load<TextAsset>(fileName), delim);
         }
         
         #endregion
         
         #region CSVToMatrix
-
-        public static string[,] CSVToStringMatrix(TextAsset asset, char delim)
+        
+        /// <summary>
+        /// Converts a given TextAsset into a 2D string matrix of cells
+        /// </summary>
+        /// <param name="asset">The .csv file to be split</param>
+        /// <returns>A 2D string matrix of the cells in the file</returns>
+        public static string[,] CSVToStringMatrix(TextAsset asset)
         {
             string[] split = asset.text.Split('\n');
             
             int ySize = split.Length;
-            int xSize = split[0].Trim().Split(delim).Length;
+            int xSize = split[0].Trim().Split(',').Length;
             
             string[,] temp = new string[ySize, xSize];
 
             for (int i = 0; i < ySize; i++)
             {
-                string[] splitSplit = split[i].Trim().Split(delim);
+                string[] splitSplit = split[i].Trim().Split(',');
                 
                 for (int j = 0; j < xSize; j++)
                 {
@@ -109,23 +159,33 @@ namespace OMCHTools
             return temp;
         }
 
-        public static string[,] CSVToStringMatrix(string fileName, char delim)
+        /// <summary>
+        /// Converts a TextAsset in the Resources folder into a 2D string matrix of cells
+        /// </summary>
+        /// <param name="fileName">The local name of the .csv file to be split in Resources</param>
+        /// <returns>A 2D string matrix of the cells in the file</returns>
+        public static string[,] CSVToStringMatrix(string fileName)
         {
-            return CSVToStringMatrix(Resources.Load<TextAsset>(fileName), delim);
+            return CSVToStringMatrix(Resources.Load<TextAsset>(fileName));
         }
         
-        public static int[,] CSVToIntMatrix(TextAsset asset, char delim)
+        /// <summary>
+        /// Converts a given TextAsset into a 2D int matrix of cells
+        /// </summary>
+        /// <param name="asset">The .csv file to be split</param>
+        /// <returns>A 2D int matrix of the cells in the file</returns>
+        public static int[,] CSVToIntMatrix(TextAsset asset)
         {
             string[] split = asset.text.Split('\n');
             
             int ySize = split.Length;
-            int xSize = split[0].Trim().Split(delim).Length;
+            int xSize = split[0].Trim().Split(',').Length;
             
             int[,] temp = new int[ySize, xSize];
 
             for (int i = 0; i < ySize; i++)
             {
-                string[] splitSplit = split[i].Trim().Split(delim);
+                string[] splitSplit = split[i].Trim().Split(',');
                 
                 for (int j = 0; j < xSize; j++)
                 {
@@ -136,23 +196,33 @@ namespace OMCHTools
             return temp;
         }
 
-        public static int[,] CSVToIntMatrix(string fileName, char delim)
+        /// <summary>
+        /// Converts a TextAsset in the Resources folder into a 2D int matrix of cells
+        /// </summary>
+        /// <param name="fileName">The local name of the .csv file to be split in Resources</param>
+        /// <returns>A 2D int matrix of the cells in the file</returns>
+        public static int[,] CSVToIntMatrix(string fileName)
         {
-            return CSVToIntMatrix(Resources.Load<TextAsset>(fileName), delim);
+            return CSVToIntMatrix(Resources.Load<TextAsset>(fileName));
         }
         
-        public static float[,] CSVToFloatMatrix(TextAsset asset, char delim)
+        /// <summary>
+        /// Converts a given TextAsset into a 2D float matrix of cells
+        /// </summary>
+        /// <param name="asset">The .csv file to be split</param>
+        /// <returns>A 2D float matrix of the cells in the file</returns>
+        public static float[,] CSVToFloatMatrix(TextAsset asset)
         {
             string[] split = asset.text.Split('\n');
             
             int ySize = split.Length;
-            int xSize = split[0].Trim().Split(delim).Length;
+            int xSize = split[0].Trim().Split(',').Length;
             
             float[,] temp = new float[ySize, xSize];
 
             for (int i = 0; i < ySize; i++)
             {
-                string[] splitSplit = split[i].Trim().Split(delim);
+                string[] splitSplit = split[i].Trim().Split(',');
                 
                 for (int j = 0; j < xSize; j++)
                 {
@@ -163,44 +233,56 @@ namespace OMCHTools
             return temp;
         }
 
-        public static float[,] CSVToFloatMatrix(string fileName, char delim)
+        /// <summary>
+        /// Converts a TextAsset in the Resources folder into a 2D float matrix of cells
+        /// </summary>
+        /// <param name="fileName">The local name of the .csv file to be split in Resources</param>
+        /// <returns>A 2D float matrix of the cells in the file</returns>
+        public static float[,] CSVToFloatMatrix(string fileName)
         {
-            return CSVToFloatMatrix(Resources.Load<TextAsset>(fileName), delim);
+            return CSVToFloatMatrix(Resources.Load<TextAsset>(fileName));
         }
-        
+
+        /// <summary>
+        /// Converts a given TextAsset into a 2D Vector3 matrix of cells
+        /// </summary>
+        /// <param name="asset">The .csv file to be split</param>
+        /// <param name="delim">The deliminator between x, y, and z values for each cell (can't be ',')</param>
+        /// <returns>A 2D Vector3 matrix of the cells in the file</returns>
         public static Vector3[,] CSVToVector3Matrix(TextAsset asset, char delim)
         {
-            if (!delim.Equals(','))
+            string[] split = asset.text.Split('\n');
+            
+            int ySize = split.Length;
+            int xSize = split[0].Trim().Split(',').Length;
+            
+            Vector3[,] temp = new Vector3[ySize, xSize];
+
+            for (int i = 0; i < ySize; i++)
             {
-                string[] split = asset.text.Split('\n');
-            
-                int ySize = split.Length;
-                int xSize = split[0].Trim().Split(delim).Length;
-            
-                Vector3[,] temp = new Vector3[ySize, xSize];
-
-                for (int i = 0; i < ySize; i++)
+                string[] splitSplit = split[i].Trim().Split(',');
+                
+                for (int j = 0; j < xSize; j++)
                 {
-                    string[] splitSplit = split[i].Trim().Split(delim);
+                    string[] splitSplitSplit = splitSplit[j].Split(delim);
                 
-                    for (int j = 0; j < xSize; j++)
-                    {
-                        string[] splitSplitSplit = splitSplit[j].Split(',');
-                
-                        temp[i, j] = new Vector3(
-                            float.Parse(splitSplitSplit[0]),
-                            float.Parse(splitSplitSplit[1]),
-                            float.Parse(splitSplitSplit[2])
-                        );
-                    }
+                    temp[i, j] = new Vector3(
+                        float.Parse(splitSplitSplit[0]),
+                        float.Parse(splitSplitSplit[1]),
+                        float.Parse(splitSplitSplit[2])
+                    );
                 }
-
-                return temp;   
             }
 
-            return null;
+            return temp;
         }
 
+        /// <summary>
+        /// Converts a TextAsset in the Resources folder into a 2D Vector3 matrix of cells
+        /// </summary>
+        /// <param name="fileName">The local name of the .csv file to be split in Resources</param>
+        /// <param name="delim">The deliminator between x, y, and z values for each cell (can't be ',')</param>
+        /// <returns>A 2D Vector3 matrix of the cells in the file</returns>
         public static Vector3[,] CSVToVector3Matrix(string fileName, char delim)
         {
             return CSVToVector3Matrix(Resources.Load<TextAsset>(fileName), delim);

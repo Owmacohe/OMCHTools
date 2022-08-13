@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="208c0302-783c-4e28-861b-35c21aef6fb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OMCHTools/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OMCHTools/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OMCHTools/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OMCHTools/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Component.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Component.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/File.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/File.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Array.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Array.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bounds.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bounds.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/untitled.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/untitled.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OMCHTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMCHTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Component.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Component.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/File.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/File.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +26,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../Insideout/Assets/Scripts/NEW/Modularity &amp; Structures/BoundsInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -79,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660336058639</updated>
       <workItem from="1660336098051" duration="7152000" />
+      <workItem from="1660418685131" duration="4886000" />
     </task>
     <servers />
   </component>

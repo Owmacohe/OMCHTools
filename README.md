@@ -21,8 +21,8 @@
 - AddAllComponents
 - SetAllRendererMaterials
 - SetAllRendererColors
-- SetMesh
-- GetMesh
+- SetMeshArray
+- GetMeshArray
 - ==TODO: add option to set/get all submeshes too==
 
 
@@ -33,3 +33,11 @@
 - GetLocalCenter
 - GetGlobalScale
 - GetLocalScale
+
+
+
+## Array
+
+- Vector3ArrayLocalToGlobal
+- Vector3ArrayGlobalToLocal
+- ==FloatArrayRound==
