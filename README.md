@@ -2,10 +2,6 @@
 
 
 
-[toc]
-
-
-
 ## File
 
 - TXTToArray (string, int, float, Vector3) (from file or Resources)
