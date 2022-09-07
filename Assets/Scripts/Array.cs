@@ -14,15 +14,22 @@ namespace OMCHTools
         /// </summary>
         /// <param name="arr">The array of Vector3s to be converted</param>
         /// <param name="obj">The GameObject to be transformed against</param>
-        /// <returns>The given array as global values</returns>
-        public static Vector3[] Vector3ArrayLocalToGlobal(Vector3[] arr, GameObject obj)
+        /// <returns>The given array as global values (null if array is null)</returns>
+        public static Vector3[] Vector3ToGlobal(Vector3[] arr, GameObject obj)
         {
-            for (int i = 0; i < arr.Length; i++)
+            if (arr != null)
             {
-                arr[i] = obj.transform.TransformPoint(arr[i]);
-            }
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    arr[i] = obj.transform.TransformPoint(arr[i]);
+                }
 
-            return arr;
+                return arr;   
+            }
+            
+            Debug.Log("Array is null!");
+
+            return null;
         }
         
         /// <summary>
@@ -31,16 +38,52 @@ namespace OMCHTools
         /// <param name="arr">The array of Vector3s to be converted</param>
         /// <param name="obj">The GameObject to be transformed against</param>
         /// <returns>The given array as local values</returns>
-        public static Vector3[] Vector3ArrayGlobalToLocal(Vector3[] arr, GameObject obj)
+        public static Vector3[] Vector3ToLocal(Vector3[] arr, GameObject obj)
         {
-            for (int i = 0; i < arr.Length; i++)
+            if (arr != null)
             {
-                arr[i] = obj.transform.InverseTransformPoint(arr[i]);
-            }
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    arr[i] = obj.transform.InverseTransformPoint(arr[i]);
+                }
 
-            return arr;
+                return arr;   
+            }
+            
+            Debug.Log("Array is null!");
+
+            return null;
         }
 
+        #endregion
+
+        #region Float
+        
+        /// <summary>
+        /// Rounds each element in a float array to a certain number of decimal places
+        /// </summary>
+        /// <param name="arr">The array of floats to be converted</param>
+        /// <param name="decim">The number of decimal places to round to</param>
+        /// <returns>The given array rounded to decimal places</returns>
+        public static float[] FloatRound(float[] arr, int decim)
+        {
+            if (arr != null)
+            {
+                int factor = (int)Mathf.Pow(10, decim);
+
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    arr[i] = Mathf.RoundToInt(arr[i] * factor) / factor;
+                }
+
+                return arr;   
+            }
+
+            Debug.Log("Array is null!");
+
+            return null;
+        }
+        
         #endregion
     }   
 }

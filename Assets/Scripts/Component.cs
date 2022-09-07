@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace OMCHTools
 {
@@ -23,7 +24,7 @@ namespace OMCHTools
         }
         
         /// <summary>
-        /// Add a Component of the given type to the given GameObject and all its children
+        /// Adds a Component of the given type to the given GameObject and all its children
         /// </summary>
         /// <param name="obj">The GameObject to be manipulated</param>
         /// <typeparam name="T">The Component type to be added</typeparam>
@@ -40,6 +41,24 @@ namespace OMCHTools
             }
 
             return temp;
+        }
+
+        /// <summary>
+        /// Gets all Components of the given type from the given GameObject and all its children
+        /// </summary>
+        /// <param name="obj">The GameObject to be manipulated</param>
+        /// <typeparam name="T">The Component type to be gotten</typeparam>
+        /// <returns>An array of all the gotten Components</returns>
+        public static T[] GetAllComponents<T>(GameObject obj) where T : Component
+        {
+            List<T> temp = new List<T>();
+            
+            foreach (T i in obj.GetComponentsInChildren<T>())
+            {
+                temp.Add(i);
+            }
+
+            return temp.ToArray();
         }
         
         #endregion
@@ -87,7 +106,14 @@ namespace OMCHTools
         {
             foreach (Renderer i in obj.GetComponentsInChildren<Renderer>())
             {
-                i.material.SetColor(Color, col);
+                if (i.material.HasColor(Color))
+                {
+                    i.material.SetColor(Color, col);   
+                }
+                else
+                {
+                    Debug.Log("Material " + i.material.name + " doesn't have a main color property!");
+                }
             }
         }
         
@@ -101,7 +127,14 @@ namespace OMCHTools
         {
             foreach (T i in obj.GetComponentsInChildren<T>())
             {
-                i.material.SetColor(Color, col);
+                if (i.material.HasColor(Color))
+                {
+                    i.material.SetColor(Color, col);   
+                }
+                else
+                {
+                    Debug.Log("Material " + i.material.name + " doesn't have a main color property!");
+                }
             }
         }
         
@@ -113,10 +146,19 @@ namespace OMCHTools
         /// Gets the Mesh property of a given GameObject's MeshFilter
         /// </summary>
         /// <param name="obj">The GameObject to be manipulated</param>
-        /// <returns>The Mesh used on this gameObject</returns>
-        public static Mesh GetMesh(GameObject obj)
+        /// <returns>The Mesh used on this GameObject (null if it doesn't have a mesh)</returns>
+        internal static Mesh GetMesh(GameObject obj)
         {
-            return obj.GetComponent<MeshFilter>().mesh;
+            MeshFilter temp = obj.GetComponent<MeshFilter>();
+
+            if (temp != null)
+            {
+                return obj.GetComponent<MeshFilter>().mesh;   
+            }
+            
+            Debug.Log("GameObject doesn't have a mesh!");
+
+            return null;
         }
 
         /// <summary>
@@ -125,14 +167,19 @@ namespace OMCHTools
         /// <param name="obj">The GameObject to be manipulated</param>
         /// <param name="vertices">The Vector3 array of local mesh points to be applied</param>
         /// <param name="replaceCollider">Whether or not to re-calculate the MeshCollider as well (true by default)</param>
-        public static void SetLocalMeshArray(GameObject obj, Vector3[] vertices, bool replaceCollider = true)
+        public static void SetLocalMeshVertices(GameObject obj, Vector3[] vertices, bool replaceCollider = true)
         {
-            GetMesh(obj).SetVertices(vertices);
+            Mesh temp = GetMesh(obj);
 
-            if (replaceCollider)
+            if (temp != null)
             {
-                Destroy(obj.GetComponent<MeshCollider>());
-                obj.AddComponent<MeshCollider>();
+                obj.GetComponent<MeshFilter>().mesh.SetVertices(vertices);
+
+                if (replaceCollider)
+                {
+                    Destroy(obj.GetComponent<MeshCollider>());
+                    obj.AddComponent<MeshCollider>();
+                }   
             }
         }
         
@@ -142,29 +189,43 @@ namespace OMCHTools
         /// <param name="obj">The GameObject to be manipulated</param>
         /// <param name="vertices">The Vector3 array of global mesh points to be applied</param>
         /// <param name="replaceCollider">Whether or not to re-calculate the MeshCollider as well (true by default)</param>
-        public static void SetGlobalMeshArray(GameObject obj, Vector3[] vertices, bool replaceCollider = true)
+        public static void SetGlobalMeshVertices(GameObject obj, Vector3[] vertices, bool replaceCollider = true)
         {
-            SetLocalMeshArray(obj, Array.Vector3ArrayGlobalToLocal(vertices, obj), replaceCollider);
+            SetLocalMeshVertices(obj, Array.Vector3ToLocal(vertices, obj), replaceCollider);
         }
 
         /// <summary>
         /// Gets the local mesh vertices of a given gameObject's MeshFilter
         /// </summary>
         /// <param name="obj">The GameObject to be manipulated</param>
-        /// <returns>The Vector3 array of local mesh points</returns>
-        public static Vector3[] GetLocalMeshArray(GameObject obj)
+        /// <returns>The Vector3 array of local mesh points (null if it doesn't have a mesh)</returns>
+        public static Vector3[] GetLocalMeshVertices(GameObject obj)
         {
-            return GetMesh(obj).vertices;
+            Mesh temp = GetMesh(obj);
+            
+            if (temp != null)
+            {
+                return GetMesh(obj).vertices;   
+            }
+
+            return null;
         }
         
         /// <summary>
         /// Gets the global mesh vertices of a given gameObject's MeshFilter
         /// </summary>
         /// <param name="obj">The GameObject to be manipulated</param>
-        /// <returns>The Vector3 array of global mesh points</returns>
-        public static Vector3[] GetGlobalMeshArray(GameObject obj)
+        /// <returns>The Vector3 array of global mesh points (null if it doesn't have a mesh)</returns>
+        public static Vector3[] GetGlobalMeshVertices(GameObject obj)
         {
-            return Array.Vector3ArrayLocalToGlobal(GetLocalMeshArray(obj), obj);
+            Vector3[] temp = GetLocalMeshVertices(obj);
+
+            if (temp != null)
+            {
+                return Array.Vector3ToGlobal(temp, obj);   
+            }
+
+            return null;
         }
         
         #endregion

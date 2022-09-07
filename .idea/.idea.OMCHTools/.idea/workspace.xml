@@ -2,15 +2,234 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="208c0302-783c-4e28-861b-35c21aef6fb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Array.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Array.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bounds.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bounds.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/untitled.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/untitled.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Documentation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Documentation.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Documentation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Documentation.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Logo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreTools.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreTools.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreToolsWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreToolsWindow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/AssetStoreUploader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/AssetStoreUploader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Icons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Icons/open-in-browser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Icons/open-in-browser.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Icons/publisher_portal_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Icons/publisher_portal_black.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Icons/publisher_portal_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Icons/publisher_portal_white.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/ASAnalytics.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/ASAnalytics.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/ASDebug.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/ASDebug.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/ASError.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/ASError.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/AssetStoreAPI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/AssetStoreAPI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/AssetStoreCache.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/AssetStoreCache.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/LoginWindow.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/LoginWindow/LoginWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/LoginWindow/LoginWindow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/OngoingUpload.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/OngoingUpload.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/PackageData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/PackageData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/PackageExporter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/PackageExporter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/PackageFetcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/PackageFetcher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/PackageUploadResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/PackageUploadResult.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/StyleSelector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/StyleSelector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/AllPackageView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/AllPackageView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/FolderUploadWorkflowView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/FolderUploadWorkflowView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/HybridPackageUploadWorkflowView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/HybridPackageUploadWorkflowView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/PackageGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/PackageGroup.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/PackageView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/PackageView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/PackageViewStorer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/PackageViewStorer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/UnityPackageUploadWorkflowView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/UnityPackageUploadWorkflowView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/UploadWorkflowView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/UploadWorkflowView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/ValidationElement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/AllPackageView/ValidationElement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/UploadWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Scripts/UploadWindow/UploadWindow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Base.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Base/BaseWindow_Dark.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Base/BaseWindow_Dark.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Base/BaseWindow_Light.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Base/BaseWindow_Light.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Base/BaseWindow_Main.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Base/BaseWindow_Main.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Base/BaseWindow_Main.uxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Base/BaseWindow_Main.uxml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Login.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Login/Login_Dark.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Login/Login_Dark.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Login/Login_Light.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Login/Login_Light.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Login/Login_Main.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Login/Login_Main.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/AllPackages.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/AllPackages/AllPackages_Dark.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/AllPackages/AllPackages_Dark.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/AllPackages/AllPackages_Light.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/AllPackages/AllPackages_Light.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/AllPackages/AllPackages_Main.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/AllPackages/AllPackages_Main.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/UploadWindow_Dark.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/UploadWindow_Dark.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/UploadWindow_Light.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/UploadWindow_Light.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/UploadWindow_Main.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreUploader/Styles/Upload/UploadWindow_Main.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/AssetStoreValidation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/AssetStoreValidation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/error.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/error_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/error_d.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/success.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/success_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/success_d.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/undefined.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/undefined.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/undefined_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/undefined_d.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/warning.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/warning_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Icons/warning_d.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Data/MessageActions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Data/MessageActions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Data/TestResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Data/TestResult.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Data/ValidationState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Data/ValidationState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/AutomatedTestElement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/AutomatedTestElement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/AutomatedTestsGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/AutomatedTestsGroup.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/AutomatedTestsGroupElement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/AutomatedTestsGroupElement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/PathBoxElement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/PathBoxElement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/ValidationInfoElement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Elements/ValidationInfoElement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/AutomatedTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/AutomatedTest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ScriptableObjects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ScriptableObjects/AutomatedTestScriptableObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ScriptableObjects/AutomatedTestScriptableObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ScriptableObjects/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ScriptableObjects/Editor/ValidationTestScriptableObjectInspector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ScriptableObjects/Editor/ValidationTestScriptableObjectInspector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ScriptableObjects/ValidationTestScriptableObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ScriptableObjects/ValidationTestScriptableObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ValidationTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Test Definitions/ValidationTest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/TestActions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/TestActions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Utility.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Utility/ValidatorUtility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Scripts/Utility/ValidatorUtility.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Styles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Styles/AssetStoreValidator_Dark.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Styles/AssetStoreValidator_Dark.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Styles/AssetStoreValidator_Light.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Styles/AssetStoreValidator_Light.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Styles/AssetStoreValidator_Main.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Styles/AssetStoreValidator_Main.uss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/01_IncludeDemo.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/01_IncludeDemo.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/02_MeshesHavePrefabsAutomatedTest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/02_MeshesHavePrefabsAutomatedTest.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/03_ResetPrefabs.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/03_ResetPrefabs.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/04_IncludeColliders.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/04_IncludeColliders.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/05_EmptyPrefab.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/05_EmptyPrefab.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/06_IncludeDocumentation.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/06_IncludeDocumentation.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/07_FixOrientation.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/07_FixOrientation.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/08_RemoveJPG.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/08_RemoveJPG.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/10_AssetMissingComponentAutomatedTest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/10_AssetMissingComponentAutomatedTest.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/11_MissingComponentAutomatedTest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/11_MissingComponentAutomatedTest.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/12_RemoveJavaScriptAutomatedTest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/12_RemoveJavaScriptAutomatedTest.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/13_RemoveLossyAudioAutomatedTest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/13_RemoveLossyAudioAutomatedTest.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/14_RemoveVideosAutomatedTest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/14_RemoveVideosAutomatedTest.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/15_RemoveExecutablesAutomatedTest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/15_RemoveExecutablesAutomatedTest.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/16_RemoveMixamoAutomatedTest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/16_RemoveMixamoAutomatedTest.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/18_RemoveSpeedTreeAutomatedTest.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/18_RemoveSpeedTreeAutomatedTest.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/19_RemoveDuplicateAnimationNames.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/19_RemoveDuplicateAnimationNames.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/20_CheckLODs.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/20_CheckLODs.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/21_ShaderCompilerErrors.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/AssetStoreValidator/Tests/21_ShaderCompilerErrors.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/Utility.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/Utility/ASToolsPreferences.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/Utility/ASToolsPreferences.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/Utility/Json.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/Utility/Json.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/Utility/LegacyToolsRemover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/Utility/LegacyToolsRemover.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/Utility/SymlinkUtil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/Utility/SymlinkUtil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/asset-store-tools-editor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/Editor/asset-store-tools-editor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/LICENSE.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/README.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.unity.asset-store-tools/package.json.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OMCHTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OMCHTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Array.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Array.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bounds.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Component.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Component.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/File.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/File.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/untitled.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/untitled.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -83,6 +302,7 @@
       <updated>1660336058639</updated>
       <workItem from="1660336098051" duration="7152000" />
       <workItem from="1660418685131" duration="4886000" />
+      <workItem from="1660578836586" duration="6680000" />
     </task>
     <servers />
   </component>
