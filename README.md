@@ -4,10 +4,6 @@
 
 
 
-[toc]
-
-
-
 ## File
 
 **For reading array data from various types of TextAssets.**
